@@ -29,6 +29,7 @@ const  Dashboard=(props)=>{
 
         })
         navigate("/bookmark");
+        
         console.log(bookmarks)
         props.dispatch({type:'FETCH_DATA',payload:bookmarks})
     }
