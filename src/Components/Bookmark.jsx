@@ -5,20 +5,22 @@ const Bookmark =(props)=>{
     
     return(
         <>
-        <p>Book marked items</p>
+    <div className="boomark-container">
+    <p>Book marked items</p>
         
         <ul>
   {props.bookMarkData?.map((item, index) => (
     <li key={index}>
-      {item.title} - <button onClick={() =>props.removeBookmark(index)}>Remove</button>
+      {item.title} - <button className="btn btn-primary" onClick={() =>props.removeBookmark(index)}>Remove</button>
     </li>
   ))}
 </ul>
+    </div>
+       
         </>
     )
 }
 const  mapStateToProps=(state)=>{
-    console.log("stat",state)
     return{
         bookMarkData:state.simpleReducer.result
     }

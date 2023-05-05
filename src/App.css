@@ -1,16 +1,35 @@
 .App {
   text-align: center;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 50%;
-  height: 5px;
+ul {
+  list-style-type: circle;
+  text-align: left;
 }
 
-.cart {
- float: right;
- margin-bottom: 2%;
+.remove{
+  float: right;
+}
+.card-container {
+ margin: 20px !important;
+}
+.card{
+  min-height: 520px;
+  margin-top: 10px;
+}
+.mainContainer{
+  background: linear-gradient(to right, #007991, #78ffd6);
+}
+
+.boomark-container{
+  border: 2px solid blue;
+  border-radius: 10px;
+  height: 100vh;
+  width: 50%;
+  margin :0 auto;
+  margin-top: 30px;
+}
+.bookmarkBtn{
+  margin-left: 10px;
 }
 
 

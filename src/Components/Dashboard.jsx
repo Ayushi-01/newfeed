@@ -29,8 +29,6 @@ const  Dashboard=(props)=>{
 
         })
         navigate("/bookmark");
-        
-        console.log(bookmarks)
         props.dispatch({type:'FETCH_DATA',payload:bookmarks})
     }
     const removeBookmark = (index) => {
@@ -39,9 +37,9 @@ const  Dashboard=(props)=>{
         setBookmarks(newBookmarks);
       }
     return(
-        <div>
+        <div className='mainContainer'>
             <h1>Get the lastest upadtes</h1>
-            <button onClick={(e)=>bookMark(e)}>Show BookMark list</button>
+            <button className='btn btn-success' onClick={(e)=>bookMark(e)}>Show BookMark list</button>
             {!showBookMark?<Card
             data={data&&data.articles}
             addBookmark={addBookmark}
